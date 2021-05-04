@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Spell Check</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Spell Check Assignment</h1>
+  <hr>
+  <h2>Single Word Spell Check</h2>
+  <p>Enter a word and then click the button of the algorithm you would like to use to chekc if the word you entered is in the dictionary file.</p>
+  <div class="inputs">
+    <p>Word: <input id="word" type="text"></p>
+    <select id="algorithm-search">
+      <option value="linearSearch">Linear Search</option>
+      <option value="binarySearch">Binary Search</option>
+    </select>
+    <button id="submit-dict" class="submit">Submit</button>
+  </div>
+  <div class="results">
+    <span id="resultsdict">Word Results...</span><br>
+    <span id="timedict"></span>
+  </div>
+
+  <hr>
+
+  <h2>Alice In Wonderland Spell Check</h2>
+  <p>Click the button of the algorithm you would like to use to check if each word from Alice in Wonderland is in the dictionary file.</p>
+  <div class="inputs">
+    <select id="algorithm-check">
+      <option value='linearCheck' type="text">Linear Search Word</option>
+      <option value='binaryCheck' type="text">Binary Search Word</option>
+    </select>
+    <button id="submit-alice" class="submit">Submit</button>
+  </div>
+  <div class="results">
+    <span id="resultsalice">Alice in Wonderland Results...</span><br>
+    <span id="timealice"></span>
+  </div>
+  <!-- Load JavaScript -->
+  <script src="js/file-loader.js"></script>
+  <script src='js/main.js'></script>
+</body>
+
+</html>
