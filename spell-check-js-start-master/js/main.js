@@ -91,7 +91,7 @@ function binarySearch(anArray, item) {
             return middleindex;
         } else if (item > anArray[middleindex]) {
             lowerindex = middleindex + 1;
-        } else if(item < anArray[middleindex]) {
+        } else {
             upperindex = middleindex - 1;
         }
     }
